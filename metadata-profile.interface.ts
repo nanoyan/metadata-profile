@@ -16,8 +16,8 @@ export interface ProfileEntryParametersVocabulary {
 
 export interface ProfileEntryParametersText {
     format: string,
-    textLanguages: string[],
-    pattern: string
+    description: string[],
+    properties: string
 }
 
 export interface ProfileEntryParametersNumber {
@@ -41,7 +41,7 @@ export interface MDProfileEntry {
 }
 
 export interface MDProfileGroup {
-    label: string,
+    label: LanguageCodedText[],
     entries: MDProfileEntry[];
 }
 
